@@ -9,16 +9,25 @@ Jedisque uses [Jedis](http://github.com/xetorthio/jedis "Jedis") as a redis clie
 To use it just:
 
 ```xml
-<dependency>
-    <groupId>com.github.xetorthio</groupId>
-    <artifactId>jedisque</artifactId>
-    <version>x.y.z</version>
-    <type>jar</type>
-    <scope>compile</scope>
-</dependency>
+<repositories>
+		<repository>
+			<id>nutzcn-snapshots</id>
+			<url>https://jfrog.nutz.cn/artifactory/snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+            <groupId>com.github.xetorthio</groupId>
+            <artifactId>jedisque</artifactId>
+            <version>0.0.5-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 ```
 
-Please replace ```x.y.z``` version with one of the available versions.
+jedisque依赖jedis2.7.2, 2.7.3以上版本不向下兼容, 日了狗了, 只能把jedis2.7.2改名打入jedisque里, 只支持快照版
     
 ```java
 Jedisque q = new Jedisque(
