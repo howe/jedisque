@@ -25,6 +25,7 @@ To use it just:
             <version>0.0.5-SNAPSHOT</version>
         </dependency>
     </dependencies>
+</repositories>   
 ```
 
 jedisque依赖jedis2.7.2, 2.7.3以上版本不向下兼容, 日了狗了, 只能把jedis2.7.2改名打入jedisque里, 只支持快照版
