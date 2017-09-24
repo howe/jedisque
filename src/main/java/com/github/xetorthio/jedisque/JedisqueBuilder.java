@@ -1,8 +1,9 @@
 package com.github.xetorthio.jedisque;
 
-import redis.clients.jedis.Builder;
-import redis.clients.jedis.BuilderFactory;
-import redis.clients.util.SafeEncoder;
+
+import com.github.xetorthio.redis.clients.jedis.Builder;
+import com.github.xetorthio.redis.clients.jedis.BuilderFactory;
+import com.github.xetorthio.redis.clients.util.SafeEncoder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,10 +39,10 @@ public class JedisqueBuilder extends BuilderFactory {
 			}
 			List<byte[]> showRaw = (List<byte[]>) data;
 			
-			return new JobInfo(SafeEncoder.encode(showRaw.get(1)), 
+			return new JobInfo(SafeEncoder.encode(showRaw.get(1)),
 					SafeEncoder.encode(showRaw.get(3)),
 					SafeEncoder.encode(showRaw.get(5)), 
-					BuilderFactory.LONG.build(showRaw.get(7)), 
+					BuilderFactory.LONG.build(showRaw.get(7)),
 					BuilderFactory.LONG.build(showRaw.get(9)),
 					BuilderFactory.LONG.build(showRaw.get(11)),
 					BuilderFactory.LONG.build(showRaw.get(13)), 

@@ -1,6 +1,6 @@
 package com.github.xetorthio.jedisque;
 
-import redis.clients.util.SafeEncoder;
+import com.github.xetorthio.redis.clients.util.SafeEncoder;
 
 
 enum Keyword {

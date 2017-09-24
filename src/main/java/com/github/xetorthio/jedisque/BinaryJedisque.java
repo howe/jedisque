@@ -1,14 +1,13 @@
 package com.github.xetorthio.jedisque;
 
-import redis.clients.jedis.Protocol;
-import redis.clients.jedis.exceptions.JedisConnectionException;
-import redis.clients.util.SafeEncoder;
+import com.github.xetorthio.redis.clients.jedis.Protocol;
+import com.github.xetorthio.redis.clients.jedis.exceptions.JedisConnectionException;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.*;
 
-public class BinaryJedisque extends redis.clients.jedis.Connection {
+public class BinaryJedisque extends com.github.xetorthio.redis.clients.jedis.Connection {
 	static final private int DISQUE_PORT = 7711;
 	private final List<URI> uris = new ArrayList<URI>();
 	private Random randomGenerator = new Random();

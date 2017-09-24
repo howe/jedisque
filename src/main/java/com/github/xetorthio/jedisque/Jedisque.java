@@ -1,13 +1,9 @@
 package com.github.xetorthio.jedisque;
 
-import redis.clients.jedis.Protocol;
-import redis.clients.jedis.exceptions.JedisConnectionException;
-import redis.clients.util.SafeEncoder;
+import com.github.xetorthio.redis.clients.jedis.Protocol;
+import com.github.xetorthio.redis.clients.util.SafeEncoder;
 
 import java.net.URI;
-import java.net.URISyntaxException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 

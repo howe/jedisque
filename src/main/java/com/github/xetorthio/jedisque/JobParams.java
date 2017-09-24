@@ -1,6 +1,6 @@
 package com.github.xetorthio.jedisque;
 
-import redis.clients.jedis.Protocol;
+import com.github.xetorthio.redis.clients.jedis.Protocol;
 
 import java.util.ArrayList;
 import java.util.Collection;

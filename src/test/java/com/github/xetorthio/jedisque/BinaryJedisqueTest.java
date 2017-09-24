@@ -1,15 +1,10 @@
 package com.github.xetorthio.jedisque;
 
 import org.junit.*;
-import redis.clients.util.SafeEncoder;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.UUID;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
 
 public class BinaryJedisqueTest {
 	private static byte[] getQueueName() {

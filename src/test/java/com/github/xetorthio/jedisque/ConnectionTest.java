@@ -3,9 +3,8 @@ package com.github.xetorthio.jedisque;
 import java.net.URI;
 import java.net.URISyntaxException;
 
+import com.github.xetorthio.redis.clients.jedis.exceptions.JedisConnectionException;
 import org.junit.Test;
-
-import redis.clients.jedis.exceptions.JedisConnectionException;
 
 public class ConnectionTest {
 
